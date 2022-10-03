@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey Yo! HBD</title>
+    <link rel="shortcut icon" href="src/cake.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:wght@300;400&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: url("src/bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Poppins';
+        }
+
+        audio{
+            color: gray;
+        }
+
+        #text{
+          font-weight: bold;
+          font-size: 1.2em;
+          width: 40%;
+        }
+
+        #content{
+            margin-top: 10%;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+          #text{
+            width: 75%;
+          }
+
+          #content{
+            margin-top: 15%;
+          }
+          
+        }
+
+    </style>
+</head>
+<body>
+
+    <script>alert('03 Octrouble 2022; Sudah di kepala 2.')</script>
+    
+    <center id="content">
+        <img src="src/cake.svg" alt="" style="margin-top: 2%; width: 120px; background-color: white; border-radius: 15px;">
+        <h1 style="background-color: white; width:fit-content; padding: 0px 5px 0px 5px; border-radius: 10px">happy 20th birthday!</h1>
+    
+        <h6 id="text" style="background-color: white; width:fit-content; padding: 0px 5px 0px 5px; border-radius: 8px; margin-top: 1%; font-size: 0.8em;">
+        </h6>
+
+        <audio controls autoplay style="margin-top: 1%; color: aqua;" src="src/Idgitaf - Takut (Official).mp3">
+        </audio>
+    
+        <div style="width: 120px; text-decoration: none; margin-top: 1%;">
+            <a href="https://docs.google.com/document/d/1indJAZzcb79rqjXWpXPg7waWLY6XlaVq_yk_A-NoeEI/edit?usp=sharing" style="text-decoration: none;">
+                <div style="height: 100px; width: 110px; background-color: rgb(255, 238, 0); border-radius: 100%; padding: 5px; font-size: 0.7em;">
+                    <p style="color: gray; text-decoration: none; margin-top: 17px;">do'a adek masih sama kaya tahun lalu. liat disini kalau lupa.</p>
+                </div>
+            </a>
+        </div>
+    
+        <script>
+            var i = 0, text;
+            text = "no one's stronger than ourself, brave and believe it"
+    
+            function ketik() {
+                if (i < text.length) {
+                    document.getElementById("text").innerHTML += text.charAt(i); i++;
+                    setTimeout(ketik, 100);
+                }
+            }
+            ketik();
+        </script>
+
+    </center>
+
+</body>
+</html>
